@@ -1,0 +1,35 @@
+<div class="container">
+  <select [(ngModel)]="selectedObject">
+    <option value="">Select an object</option>
+    <option value="car">Largest Car</option>
+    <option value="plane">Largest Plane</option>
+    <option value="ship">Largest Ship</option>
+  </select>
+
+  <fieldset>
+    <div *ngIf="selectedObject === 'car'">
+      <p>The world's longest car is "The American Dream," which is 100 feet and 1.5 inches long. It's a super limo with
+        26
+        wheels, a helipad, a putting green, and a swimming pool. The car was built by Jay Ohrberg in 1986 and started
+        out
+        as six Cadillac Eldorados.</p>
+      <img src="https://qph.cf2.quoracdn.net/main-qimg-8a21544fc479673b91e5898d58350fcf.webp" alt="car" />
+    </div>
+    <div *ngIf="selectedObject === 'plane'">
+      <p>The Antonov An-225 Mriya, a Ukrainian cargo aircraft that entered service in 1988. In terms of length, wingspan
+        and maximum take-off weight, it is the largest in the world, with a length of 84 metres, a wingspan of 88 metres
+        and a maximum take-off weight of 640 tonnes.</p>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Antonov_An-225_Beltyukov-1.jpg/450px-Antonov_An-225_Beltyukov-1.jpg"
+        alt="plane" />
+    </div>
+    <div *ngIf="selectedObject === 'ship'">
+      <p>The Seawise Giant is the largest ship ever built in terms of length, displacement, and deadweight tonnage. It
+        was
+        originally constructed in 1979 at the Oppama shipyard in Japan and delivered as the Happy Giant oil tanker, with
+        a
+        length of 458</p>
+      <img src="https://upload.wikimedia.org/wikipedia/en/d/da/Knock_Nevis.jpg" alt="ship" />
+    </div>
+  </fieldset>
+</div>

@@ -1,0 +1,29 @@
+<div class="container">
+  <button (click)="showCar()">Largest Car</button>
+  <button (click)="showPlane()">Largest Plane</button>
+  <button (click)="showShip()">Largest Ship</button>
+  <fieldset>
+    <div *ngIf="selectedObject === 'car'">
+      <p>The largest car is...</p>
+      <p>The world's longest car is "The American Dream," which is 100 feet and 1.5 inches long. It's a super limo with
+        26
+        wheels, a helipad, a putting green, and a swimming pool. The car was built by Jay Ohrberg in 1986 and started
+        out
+        as six Cadillac Eldorados.</p>
+    </div>
+    <div *ngIf="selectedObject === 'plane'">
+      <p>The largest plane is...</p>
+      <p>The Antonov An-225 Mriya, a Ukrainian cargo aircraft that entered service in 1988. In terms of length, wingspan
+        and maximum take-off weight, it is the largest in the world, with a length of 84 metres, a wingspan of 88 metres
+        and a maximum take-off weight of 640 tonnes.</p>
+    </div>
+    <div *ngIf="selectedObject === 'ship'">
+      <p>The largest ship is...</p>
+      <p>The Seawise Giant is the largest ship ever built in terms of length, displacement, and deadweight tonnage. It
+        was
+        originally constructed in 1979 at the Oppama shipyard in Japan and delivered as the Happy Giant oil tanker, with
+        a
+        length of 458</p>
+    </div>
+  </fieldset>
+</div>

@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+select {
+    display: flex;
+    font-size: large;
+    margin: 5px;
+}
+
+fieldset {
+    display: flex;
+    width: 100%;
+    border-radius: 5px;
+    flex-direction: column;
+    height: 150px;
+    margin: 5px;
+}
+
+div {
+    display: flex;
+}
+
+img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
